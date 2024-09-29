@@ -19,6 +19,10 @@
     display: flex;
     cursor: pointer;
 }
+.language a{
+    color: white;
+    text-decoration: none;
+}
 .lang-divider {
     width: 0.8px;
     height: 20px;
@@ -71,6 +75,10 @@
     border: none;
     background-color: transparent;
 }
+.Logo-Div{
+    display: flex;
+    justify-content: center;
+}
 .header-logo-img{
     max-height: 86px;
 }
@@ -117,9 +125,13 @@ height: auto;
 }
 .navName-div{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
 }
 .navName{
     cursor: pointer;
+    text-decoration: none;
 }
 .drop-down-manu{
     background: rgb(243,230,132);

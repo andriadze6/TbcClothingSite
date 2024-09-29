@@ -5,7 +5,7 @@ import twitterIcon from '../assets/img/twitterIcon.png';
 import searchIcon from '../assets/img/icon-search.png';
 import logo from '../assets/img/Logo.png';
 import cartIcon from '../assets/img/icon-cart.png';
-
+import { Link } from 'react-router-dom';
 function Header(){
     return(
         <header>
@@ -13,17 +13,17 @@ function Header(){
                 <div className='header1-content'>
                     <div className='language'>
                         <div>
-                            <a>ქართული</a>
+                            <Link>ქართული</Link>
                         </div>
                         <div className='lang-divider'></div>
                         <div>
-                            <a>English</a>
+                            <Link>English</Link>
                         </div>
                     </div>
                     <div className='socialNetwork'>
                         <img src={facebookIcon} alt="" />
-                        <img src={instagramIcon}/>
-                        <img src={twitterIcon}/>
+                        <img src={instagramIcon}alt=''/>
+                        <img src={twitterIcon} alt=''/>
                     </div>
                     <div className='login-Account'>
                         <button className='sign-button'>Sign up</button>
@@ -51,10 +51,10 @@ function Header(){
             <div className='header3-div'>
                 <nav className='header3-content'>
                     <div className='navName-div'>
-                        <p className='navName'>Home</p>
+                        <Link to="/" className='navName'>Home</Link>
                     </div>
                     <div className='navName-div'>
-                        <p className='navName'>Women <i className="fa fa-angle-down"></i></p>
+                        <Link className='navName'>Women <i className="fa fa-angle-down"></i></Link>
                         <div className='drop-down-manu'>
                             <div>
                                 <h3 className='category-name'>Clothing</h3>
@@ -86,7 +86,7 @@ function Header(){
                         </div>
                     </div>
                     <div className='navName-div'>
-                        <p className='navName'>Mens <i className="fa fa-angle-down"></i></p>
+                        <Link className='navName'>Mens <i className="fa fa-angle-down"></i></Link>
                         <div className='drop-down-manu'>
                             <div>
                                 <h3 className='category-name'>Clothing1</h3>
@@ -118,7 +118,7 @@ function Header(){
                         </div>
                     </div>
                     <div className='navName-div'>
-                        <p className='navName'>Kids <i className="fa fa-angle-down"></i></p>
+                        <Link className='navName'>Kids <i className="fa fa-angle-down"></i></Link>
                         <div className='drop-down-manu'>
                             <div>
                                 <h3 className='category-name'>test</h3>
@@ -150,10 +150,10 @@ function Header(){
                         </div>
                     </div>
                     <div className='navName-div'>
-                        <p className='navName'>About us</p>
+                        <Link to={'/aboutUs'} className='navName'>About us</Link>
                     </div>
                     <div className='navName-div'>
-                        <p className='navName'>Contact</p>
+                        <Link className='navName'>Contact</Link>
                     </div>
                 </nav>
             </div>
