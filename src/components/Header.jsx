@@ -153,7 +153,7 @@ function Header(){
                         <Link to={'/aboutUs'} className='navName'>About us</Link>
                     </div>
                     <div className='navName-div'>
-                        <Link className='navName'>Contact</Link>
+                        <Link to={'/contact'}className='navName'>Contact</Link>
                     </div>
                 </nav>
             </div>

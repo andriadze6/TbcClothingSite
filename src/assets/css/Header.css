@@ -142,14 +142,15 @@ height: auto;
     right: 0;
     top: 52px;
     border-radius: 5px;
-    visibility: visible;
+    visibility: hidden;
     opacity: 0;
     transition: opacity 1s linear;
     transform-origin: center center;
-    z-index: 5;
+    z-index: 50;
 }
 .navName-div:hover .drop-down-manu{
     opacity: 1;
+    visibility: visible;
 }
 .navName:hover{
     color: #247f9e;

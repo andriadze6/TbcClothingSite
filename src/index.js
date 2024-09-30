@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
-import HomePage from './pages/Home/HomePage';
-import AboutUs from './pages/about/AboutUs';
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
 import ErroPage  from './pages/ErroPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +18,11 @@ const router = createBrowserRouter([
   {
     path:'/aboutUs',
     element: <AboutUs></AboutUs>,
+    errorElement:<ErroPage></ErroPage>
+  },
+  {
+    path:'/contact',
+    element: <Contact></Contact>,
     errorElement:<ErroPage></ErroPage>
   }
 
