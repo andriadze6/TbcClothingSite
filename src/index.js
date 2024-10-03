@@ -7,6 +7,8 @@ import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import ErroPage  from './pages/ErroPage';
+import Blog from './pages/BlogPage';
+import MyAccount from './pages/MyAccount';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -24,8 +26,17 @@ const router = createBrowserRouter([
     path:'/contact',
     element: <Contact></Contact>,
     errorElement:<ErroPage></ErroPage>
+  },
+  {
+    path:'/blog',
+    element: <Blog></Blog>,
+    errorElement:<ErroPage></ErroPage>
+  },
+  {
+    path:'/myAcount',
+    element: <MyAccount></MyAccount>,
+    errorElement:<ErroPage></ErroPage>
   }
-
 ]);
 
 root.render(

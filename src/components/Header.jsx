@@ -6,6 +6,7 @@ import searchIcon from '../assets/img/icon-search.png';
 import logo from '../assets/img/Logo.png';
 import cartIcon from '../assets/img/icon-cart.png';
 import { Link } from 'react-router-dom';
+import userImg from '../assets/img/UserImg.jpg'
 function Header(){
     return(
         <header>
@@ -27,6 +28,18 @@ function Header(){
                     </div>
                     <div className='login-Account'>
                         <button className='sign-button'>Sign up</button>
+                    </div>
+                    <div className='user'>
+                        <div className='userImg-div'>
+                            <img className='userImg' src={userImg} alt="" />
+                        </div>
+                        <ul className='userProfile'>
+                            <Link to={'/myAcount'} className='navName'><li>My Acount &#129171;</li></Link>
+                            <Link className='navName'><li>Check out &#129171;</li></Link>
+                            <Link className='navName'><li>Shoping cart &#129171;</li></Link>
+                            <Link className='navName'><li>Wish list &#129171;</li></Link>
+                            <Link className='navName'><li>log out</li></Link>           
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -154,6 +167,9 @@ function Header(){
                     </div>
                     <div className='navName-div'>
                         <Link to={'/contact'}className='navName'>Contact</Link>
+                    </div>
+                    <div className='navName-div'>
+                        <Link to={'/blog'}className='navName'>Blog</Link>
                     </div>
                 </nav>
             </div>

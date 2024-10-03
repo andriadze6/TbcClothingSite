@@ -42,9 +42,41 @@
     padding: 10px;
 }
 .login-Account{
+    display: none;
+    justify-content: flex-end;
+}
+.user{
+    position: relative;
     display: flex;
     justify-content: flex-end;
 }
+.user:hover .userProfile{
+    opacity: 1;
+}
+.userProfile{
+    position: absolute;
+    top: 86%;
+    right: -5%;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.userProfile li{
+    background: radial-gradient(circle, rgba(76,129,144,1) 28%, rgba(40,24,52,0.9360119047619048) 100%);
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.userProfile li:hover{
+    color: white;
+}
+.userImg{
+    cursor: pointer;
+    width: 40px;
+    border-radius: 80%;
+}
+
 .sign-button {
     color: black;
     background-color: #247f9e;
@@ -118,7 +150,7 @@ height: auto;
 .header3-content{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(7,1fr);
     border-bottom: 1px solid #98cddf;
     width: 70%;
     position: relative;

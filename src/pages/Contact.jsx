@@ -8,6 +8,7 @@ function ContactPage(){
             <Header></Header>
             <div className="contacPage-div">
                 <h1>Contac us</h1>
+                <div></div>
                 <form className='contac-form'>
                     <div>
                         <label>Name:</label>
